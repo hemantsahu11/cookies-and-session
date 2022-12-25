@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get sessions</title>
+</head>
+<body>
+    <h1>Getting Sessions</h1>
+    <h3>{{name}}</h3>
+    <h3>{{branch}}</h3>
+    <p>All sessions </p>
+    {% for key,value in request.session.items %}
+        {{key}}:{{value}} <br>
+    {% endfor %}
+</body>
+</html>
